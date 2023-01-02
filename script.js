@@ -9,7 +9,8 @@ function getJoke(){
                 let joke = JSON.parse(APIResponse);
                 console.log(joke);
 
-
+                let bodyElementLength = document.body.children.length;
+                console.log(bodyElementLength);
 
                 let myJokeDiv = document.createElement('div');
                 myJokeDiv.innerHTML = joke[0].question;
@@ -20,9 +21,9 @@ function getJoke(){
                 }
                 document.body.appendChild(myJokeDiv);
                 document.body.appendChild(myButton);
-
-                let isJoakThere = document.body.div.innerHTML
-                console.log(isJoakThere);
             }
         })
 }
+
+let bodyArray = document.body.children;
+console.log(bodyArray);
