@@ -25,5 +25,8 @@ function getJoke(){
         })
 }
 
-let bodyArray = document.body.children;
-console.log(bodyArray);
+let lastChild = document.body.lastChild;
+
+function removeJoak() {
+    document.body.removeChild(document.body.children[3]);
+}
